@@ -7,7 +7,7 @@ from schemas.document_upload import DocumentUpload
 
 router = APIRouter()
 
-text_splitter = text_splitter = RecursiveCharacterTextSplitter(
+text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=100,  # кол-во символов
     chunk_overlap=20,  # наложение между чанками
     length_function=len,
